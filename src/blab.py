@@ -2,7 +2,7 @@ import socket, os
 from sys import path
 from colorama import Fore
 from optparse import OptionParser
-
+lol
 op = OptionParser ('--ip <IP Address for listening> -p <port for listening>')
 op.add_option ('--ip', dest='ip', type='string')
 op.add_option ('-p', '--port', dest='port', type='int')
